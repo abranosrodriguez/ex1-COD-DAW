@@ -6,25 +6,25 @@
     @property {number} contador Contador
     @property {number} aux Auxiliar numero
 **/
-function c(d) {
-    var c = 5 / 9 * (d - 32);
-    return c;
+function cTem(faren) {
+    var centi = 5 / 9 * (faren - 32);
+    return centi;
 }
 
-var df = [60, 32, 100]; var dc = []; var contador;
+var grFaren = [60, 32, 100]; var grCenti = []; var contador;
 
-function b() {
+function exit() {
     for (contador = 2; contador >= 0; contador--) {
-        document.write("Valor " + contador + " es " + df[contador] + " F ");
-        document.write(" el cual es " + dc[contador] + " C");
-        fc(dc[contador])
+        document.write("Valor " + contador + " es " + grFaren[contador] + " F ");
+        document.write(" el cual es " + grCenti[contador] + " C");
+        tempe(grCenti[contador])
     }
 }
 
-function a() { for (contador = 0; contador <= 2; contador++) { dc[contador] = c(df[contador]); } }
+function centi() { for (contador = 0; contador <= 2; contador++) { grCenti[contador] = cTem(grFaren[contador]); } }
 
-function fc(aux) {
-    if (aux > 25) {
+function tempe(aux_centi) {
+    if (aux_centi > 25) {
         document.write(" Hace calor <br />");
     } else if (aux < 15) {
         document.write(" Hace frio <br />");
