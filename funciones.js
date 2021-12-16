@@ -1,3 +1,11 @@
+/* 
+    @function c(d)
+    @property {number} c Variable de tipo numero
+    @property {array} df Array de numero
+    @property {array} dc Array vacio
+    @property {number} contador Contador
+    @property {number} aux Auxiliar numero
+**/
 function c(d) {
     var c = 5 / 9 * (d - 32);
     return c;
