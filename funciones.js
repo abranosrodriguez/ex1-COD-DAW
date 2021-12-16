@@ -1,10 +1,10 @@
 /* 
-    @function c(d)
-    @property {number} c Variable de tipo numero
-    @property {array} df Array de numero
-    @property {array} dc Array vacio
+    @function cTem(faren)
+    @property {number} centi Variable de tipo numero - Para la temperatura en centigrados
+    @property {array} grFaren Array de numero para las temepraturas en faren
+    @property {array} grCenti Array vacio pero será para las temperaturas de faren
     @property {number} contador Contador
-    @property {number} aux Auxiliar numero
+    @property {number} aux_centi Auxiliar numero para la sensacion termica
 **/
 function cTem(faren) {
     var centi = 5 / 9 * (faren - 32);
